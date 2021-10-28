@@ -1,0 +1,10 @@
+@*-------------------------*@
+@* A UL/LI helper function *@
+@*-------------------------*@
+@ul(list: List[Any]) = {
+  <ul>
+  @list.map { e =>
+    <li>@e</li>
+  }
+  </ul>
+}
